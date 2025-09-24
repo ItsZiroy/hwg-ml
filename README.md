@@ -18,7 +18,7 @@ This guided repo assumes that you are working with [Visual Studio Code](https://
 
 ### UV
 
-We will be using [UV](https://uv.app/) to manage our Python environment. Please download and install it on your device using the official [installation guide](https://docs.astral.sh/uv/getting-started/installation/).
+We will be using [UV](https://docs.astral.sh/uv/) to manage our Python environment. Please download and install it on your device using the official [installation guide](https://docs.astral.sh/uv/getting-started/installation/).
 
 
 ## Cloning the Repository
