@@ -33,6 +33,19 @@ Navigate into the cloned directory:
 ```bash
 cd hwg-ml
 ```
+
+Remove the current git history:
+
+On MacOS/Linux:
+```bash
+rm -rf .git
+```
+
+On Windows:
+```bash
+rmdir /s /q .git
+```
+
 ## Setting Up the Environment
 Create a new Python environment using UV:
 
