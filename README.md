@@ -34,18 +34,6 @@ Navigate into the cloned directory:
 cd hwg-ml
 ```
 
-Remove the current git history:
-
-On MacOS/Linux:
-```bash
-rm -rf .git
-```
-
-On Windows:
-```bash
-rmdir /s /q .git
-```
-
 ## Setting Up the Environment
 Create a new Python environment using UV:
 
@@ -53,6 +41,9 @@ Create a new Python environment using UV:
 uv sync
 ```
 This will create a virtual environment and install all the necessary dependencies specified in the `pyproject.toml` file.
+
+## Working on the Exercises
+I recommend you copy the unziped folder with the exercise into the `exercises` folder in the repository. This way, you can keep all your work organized in one place.
 
 ## Opening Jupyter Notebooks in VS Code
 
