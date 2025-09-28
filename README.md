@@ -45,7 +45,7 @@ This will create a virtual environment and install all the necessary dependencie
 ## Working on the Exercises
 I recommend you copy the unziped folder with the exercise into the `exercises` folder in the repository. This way, you can keep all your work organized in one place.
 
-You will find all exercises on the [course page](https://h4hn.de/courses/c29332-machine-learning).
+You will find all exercises on the [course page](https://h4hn.de/courses/c29331-machine-learning).
 
 ## Opening Jupyter Notebooks in VS Code
 
