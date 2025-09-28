@@ -1,8 +1,8 @@
-# C29332 Machine Learning
+# C29331 Machine Learning
 
 ![Header](./docs/header.png)
 
-Welcome to the C29332 Machine Learning repository! This project is aimed to assist you in working on the exercises. 
+Welcome to the C29331 Machine Learning repository! This project is aimed to assist you in working on the exercises. 
 
 ## Prerequisites
 
