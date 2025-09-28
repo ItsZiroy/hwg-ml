@@ -45,6 +45,8 @@ This will create a virtual environment and install all the necessary dependencie
 ## Working on the Exercises
 I recommend you copy the unziped folder with the exercise into the `exercises` folder in the repository. This way, you can keep all your work organized in one place.
 
+You will find all exercises on the [course page](https://h4hn.de/courses/c29332-machine-learning).
+
 ## Opening Jupyter Notebooks in VS Code
 
 1. Open Visual Studio Code.
@@ -64,3 +66,13 @@ You can now run the cells in the Jupyter Notebook by clicking the "Run" button o
 
 ![Run Notebook](./docs/running-cells.png)
    
+## Turning Off Copilot
+
+If you have GitHub Copilot enabled in VS Code, I recommend you turn it off. Ultimately it is you decision, but if you leave it on, you will not actually learn anything.
+
+1. Open the Command Palette by pressing `Ctrl + Shift + P` (or `Cmd + Shift + P` on macOS).
+2. Type "Copilot: Disable Completions" and select the option to disable GitHub Copilot
+
+You may re-enable it later by following the same steps and selecting "Copilot: Enable Completions".
+
+
