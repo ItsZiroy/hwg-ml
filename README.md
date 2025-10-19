@@ -35,12 +35,45 @@ cd hwg-ml
 ```
 
 ## Setting Up the Environment
-Create a new Python environment using UV:
+You can use either UV (recommended for this course) or Anaconda/Conda. Pick the workflow you prefer — both will let you open and run the notebooks in `exercises/`.
+
+### Using UV (recommended)
+Create a new Python environment and install the pinned dependencies from `pyproject.toml` and `uv.lock` with:
 
 ```bash
 uv sync
 ```
-This will create a virtual environment and install all the necessary dependencies specified in the `pyproject.toml` file.
+
+UV will create a local virtual environment (usually at `.venv/` inside the project) and install all required packages. After `uv sync` you can:
+
+- Let VS Code pick the `.venv` interpreter (see the next section), or
+- Activate manually in a terminal: `source .venv/bin/activate` (macOS / Linux) and then run notebooks or commands.
+
+### Using Anaconda / Conda
+If you prefer Anaconda/Miniconda, use a Conda environment instead. Example steps:
+
+1. [Install Anaconda or Miniconda](https://www.anaconda.com/docs/getting-started/getting-started) from the official site if you don't have it already.
+2. Create and activate a new environment:
+
+```bash
+conda create -n hwg-ml python=3.13 -y
+conda activate hwg-ml
+```
+
+3. Install the project (and its dependencies) from the repository root. This will read `pyproject.toml` and install the depdendencies:
+
+```bash
+pip install -e .
+```
+
+
+Notes:
+
+- Conda environments are usually listed by VS Code automatically. If the env doesn't appear, restart VS Code or run the following command to register the kernel manually: 
+
+```bash
+python -m ipykernel install --user --name=hwg-ml --display-name "Python (hwg-ml)"
+```
 
 ## Working on the Exercises
 I recommend you copy the unziped folder with the exercise into the `exercises` folder in the repository. This way, you can keep all your work organized in one place.
@@ -58,7 +91,12 @@ You will find all exercises on the [course page](https://h4hn.de/courses/c29331-
 
 1. On the Top Right Corner of the VS Code window, click on the Python kernel selector. ![Select Interpreter](./docs/select-kernel.png)
 2. Click on "Python Environment" ![Select Python Environment](./docs/select-python-environment.png)
-3. Select the interpreter that corresponds to the UV environment you created earlier. It should be located in the `.venv/bin/python` folder inside the project directory. ![Select UV Environment](./docs/choose-venv.png)
+3. Select the interpreter that corresponds to the environment you created:
+
+- If you used UV: choose the `.venv/bin/python` interpreter inside the project folder (the images show this flow). ![Select UV Environment](./docs/choose-venv.png)
+- If you used Conda: pick the Conda environment (it may be shown as `conda: hwg-ml` or by the full interpreter path)
+
+If the environment doesn't show up in the list, restart VS Code or open a terminal from VS Code with the env activated and try again.
 
 ### Running the Notebooks
 
